@@ -1,0 +1,376 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;            /*плавный переход на начало сайта при помощи стрелки*/
+}
+
+.arrow-up{                 /*стрелка и ее расположение*/
+    position: fixed;
+    bottom: 10px;            /*высота*/
+    right: 7px;             /*расположение справа*/
+}
+
+.arrow-up a{              /*размеры стрелки*/
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    background: blue;
+    text-align: center;
+    display: block;
+    line-height: 50px;
+    border-radius: 90%;
+    transition: 0.5s;
+}
+
+.arrow-up a:hover{
+    background: #FF0000;
+
+}
+.container {
+    margin: 0px 40px;                        /* переход логотипа */
+    text-align: center;
+} 
+
+.header {
+    background: rgb(63, 72, 204);
+    max-width: 110%;
+    height: 98vh;                          /*ширина шапки*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.header-line {
+    padding-top: 40px;
+    align-items: left;
+    justify-content: space-around;
+}
+
+.nav {
+    margin-top: 100px;                  /*расположение навигационной панели от логотипа*/
+}
+.nav-item {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 530;
+    font-size: 30px;
+
+    margin-right: 40px;                    /*отстут от слов*/
+    
+    transition: color 0.5s linear;           /* плавный переход цвета в навигации */
+}
+
+.header-logo {                                  /*линия*/
+    border-right: 2px solid #FFFFFF;
+}
+
+.nav-item:hover {
+    color: #FF0000;                   /* цвет ссылки в навигации */
+}
+
+.header-subtitle {                            /* название организации */
+    color: #fff;
+    font-weight: 250;
+    font-size: 45px;
+    text-align: left;
+}
+
+.logo-sublititle {                         /* связь логотипа и названия орг для красивого вида */
+    display: flex;
+    align-items: center;
+}
+
+.header-text1 {                       /*текст по центру в шапке*/
+    color: #fff;
+    font-weight: 350;                       /*толщина текста*/
+    font-size: 45px;                         /*размер текста*/
+    margin: 0px 60px;                    /*расположение текста по левому краю*/
+    text-align: left;                       /*расположение текста*/
+    margin-top: 75px;                    /*отступ от логотипа*/
+}
+
+.header-text2 {
+    color: #fff;
+    font-weight: 100px;
+    font-size: 26px;
+    margin: 0px 0px;                    /*расположение текста по левому краю*/
+    text-align: left;    
+    margin-top: 20px;
+}
+.logo2 {
+    max-width: 100%;
+    margin: 0px 79px;                       
+    text-align: right;
+}
+
+@media (max-width: 1200px) {
+    .title {
+        font-size: 50px;
+        width: auto;
+    }
+}
+
+@media (max-width: 1191px) {
+    .nav {
+        display: block;
+        text-align: center;
+    }
+    .nav-item {
+        display: block;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 0px 20px;
+    }
+    .header-subtitle {
+        font-size: 35px;
+    }
+    .header-text1 {
+        font-size: 35px;
+        margin: 0px 20px;
+    }
+    .header-text2 {
+        font-size: 20px;
+    }
+    .logo2 {
+        margin: 0px 20px;
+    }
+    .nav-item {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-subtitle {
+        font-size: 30px;
+    }
+    .header-text1 {
+        font-size: 30px;
+    }
+    .header-text2 {
+        font-size: 18px;
+    }
+    .nav-item {
+        font-size: 20px;
+    }
+}
+.header-text {
+    display: flex;
+    align-items: right;
+}
+.history {                     /*основной блок О нас*/
+    margin-top: 66px;
+    padding-bottom: 100px;
+}
+
+.history-title {                   /*заголовок О нас*/
+    font-weight: 300px;
+    font-size: 60px;
+    color: #FF0000;
+    width: 530px;                   /*распределение залоговка относительно текста*/
+    text-align: center;   
+}
+
+.history-desk {                 /*текст про организацию*/
+    color:black;
+    font-size: 27px;               /*размер текста*/
+    width: 530px;
+    text-align: center;
+    margin-top: 9px;              /*отступ от залогока*/
+}
+
+.history-number {                    /*про ввк*/
+    display: flex;                   /*расположение элементов в строку*/
+    justify-content: center;
+}
+
+.history-none {
+    justify-content: center;
+    width: 50px
+    margin-right: 31px;
+    padding: 50px 20px;
+}
+
+.number-item {
+    width: 33%;
+    font-size: 25px;                     /*размер шрифта*/
+    color: black;
+
+}
+.number-item2 {
+    width: 33%;
+    font-size: 23px;                     /*размер шрифта*/
+    color: rgb(255, 0, 0);
+}
+
+.number-desc {
+    width: 33%;
+    font-size: 23px;                     /*размер шрифта*/
+    color: black;
+}
+.number-desc2 {
+    width: 33%;
+    font-size: 23px;                     /*размер шрифта*/
+    color: rgb(255, 0, 0);
+}
+
+.number-title {
+    width: 33%;
+    font-size: 23px;                     /*размер шрифта*/
+    color: black;
+}
+.number-title2 {
+    width: 33%;
+    font-size: 23px;                     /*размер шрифта*/
+    color: rgb(255, 0, 0);
+}
+.number-item span {
+    display: block;
+    color: #FF0000;
+}
+
+.history-holder {
+    display: flex;
+    justify-content: space-between;
+}
+
+.history-images {
+    max-width: 100%;
+    margin: 0px 100px;                       
+    text-align: right;
+    display: flex;
+    align-items: left;
+    margin-top: 0px;                      /*расположение фото по высоте к тексту*/
+}
+
+.black-block {
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 90px;
+}
+
+.center {                        /*заголовок виды деательности*/
+    color: #FF0000;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;  
+}
+
+.vid1 {                              /*первая табличка*/
+    margin-top: 40px;                /*отступ от заголовка*/
+    background-color: #ff0000;
+    text-align: center;              /*текст по центру*/
+    width: 33%;                      /*ширина квадрата*/
+
+    margin-right: 50px;
+}
+
+.menu-text {
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    color: #fff;
+}
+.menu-subtext {
+    color: #fff;
+    font-size: 18px;
+    padding-bottom: 25px;
+}
+
+.dishens {
+    display: flex;
+    justify-content: center;
+}
+
+              /*заявка*/
+.body1{      
+    color: rgb(255, 255, 255);                    /*цвет слова заявка*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.con {                           /*окно заявки*/
+    height: 300px;                  /*размер окна*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.forma {
+    width: 1800px;            /*ширина формы*/
+    height: 420px;            /*высота формы*/
+    background: blue;      /*цвет зявки*/
+}
+
+h1{
+    font-size: 38px;
+    text-align: center;
+    color: #fff;
+}
+
+span{                      /*название окон*/
+    margin: 0px 200px;                    /*расположение текста по левому краю*/
+    text-align: left;                       /*расположение текста*/
+    font-weight: 0px;
+    font-size: 20px;
+    color: #fff;   
+}
+
+.con .row form span{
+    color: #fff;
+    text-align: center;
+}
+
+input{                        /*окна для заполнения*/
+    width: 70%;                    /*длина окон*/
+    border-radius: 11px;        /*закругление окошек*/
+    left: 30px;
+    height: 27px;
+    margin: 15px 200px;         /*расстояние между окнами и текстом -ширина между окнами, 150-отступы*/
+    padding-left: 20px;
+    font-size: 14px;
+    flex-direction: column;
+}
+
+button{
+    margin: 0px 200px;
+    padding: 9px 22px;
+    text-decoration: none;
+    font-size: 13px;
+    border-radius: 11px;          /*закругление углов*/
+    color: black;
+    cursor: pointer;
+    transition: 1.2s;      /*скорость света на кнопке*/
+}
+button:hover {
+    background-color: #FF0000;
+    transition: color 0.5s linear;  /*подсветка кнопки и текста в ней*/
+    color: #fff;
+}
+._title{
+    margin-top: 70px;
+    color: black;
+}
+
+.our-location__paragraph{
+    color: blue;
+    font-size: 20px;
+    text-align: center;  
+}
+
+.our-location__subheading{
+    font-size: 21px;
+    text-align: center;  
+}
+
+.highlighted-word{
+    text-align: center;  
+}
