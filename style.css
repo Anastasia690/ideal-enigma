@@ -35,7 +35,7 @@ html{
 } 
 
 .header {
-    background-image: url(bg.jpg);
+    background: rgb(63, 72, 204);
     max-width: 110%;
     height: 98vh;                          /*ширина шапки*/
     background-repeat: no-repeat;
